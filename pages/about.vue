@@ -4,6 +4,8 @@
 
     <spacer />
 
+    <div class="pageFlex">
+
     <ContentContainer>
 
         <titleElement> Hi, I'm WorldWidePixel. </titleElement>
@@ -21,6 +23,8 @@
         </div>
 
     </ContentContainer>
+
+    </div>
 
 </template>
 
