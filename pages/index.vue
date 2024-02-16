@@ -12,7 +12,7 @@
 
         <pixelWordMark class="wordmark" />
 
-        <SubTitleElement class="landingSubtitle">I make things. On the internet.</SubTitleElement>
+        <SubTitleElement style="text-align: center;" class="landingSubtitle">I make things. On the internet.</SubTitleElement>
 
         <spacer />
 
@@ -50,6 +50,14 @@ console.log(route.params.slug)
 definePageMeta({
   layout: 'landing'
 })
+
+useSeoMeta({
+  ogTitle: "WorldWidePixel - Welcome",
+  ogDescription: "I make things. On the internet.",
+  title: 'WorldWidePixel - Welcome',
+  description: 'I make things. On the internet.',
+  ogImage: '~/assets/logo.png',
+});
 
 </script>
 
@@ -124,7 +132,6 @@ definePageMeta({
     }
     .subtitleTiny.tiny {
       font-size: 5vw;
-      text-align: center;
     }
 
     .bullet {

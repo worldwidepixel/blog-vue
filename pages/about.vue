@@ -23,3 +23,13 @@
     </ContentContainer>
 
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+  ogTitle: "WorldWidePixel - About",
+  ogDescription: "I make things. On the internet.",
+  title: 'WorldWidePixel - About',
+  description: 'I make things. On the internet.',
+  ogImage: '~/assets/logo.png',
+});
+</script>

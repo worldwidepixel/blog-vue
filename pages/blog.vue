@@ -31,6 +31,14 @@
   
   // When accessing /posts/1, route.params.id will be 1
   console.log(route.params.slug)
+
+  useSeoMeta({
+  ogTitle: "WorldWidePixel - Blog",
+  ogDescription: "I make things. On the internet.",
+  title: 'WorldWidePixel - Blog',
+  description: 'I make things. On the internet.',
+  ogImage: '~/assets/logo.png',
+});
   </script>
   
   <style>
