@@ -17,6 +17,7 @@
         border-radius: 5rem;
         user-select: none;
         width: fit-content;
+        color: var(--colour-title-text);
 }
 
 </style>

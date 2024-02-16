@@ -2,14 +2,17 @@
 
     <div class="footer">
 
-        <div class="column">
+        <div class="column desktopMobile">
 
-            <span class="aboveTitle">created by</span>
-            <span class="footerMain">WorldWidePixel. </span>
+            <span class="aboveTitle desktop">created by</span>
+            <span class="footerMain desktop">WorldWidePixel. </span>
+            <logo class="footerLogo mobile" />
 
         </div>
         
-        <squareDivider class="squareDivider" />
+        <squareDivider class="squareDivider desktop" />
+        <squareDivider class="squareDivider mobile" />
+
 
         <div class="column">
             <NuxtLink class="footerLink" to="https://youtube.com/@worldwidepixel"> <socialChip> <LucidePlaySquare style="stroke-width: 1px;" /> Youtube </socialChip> </NuxtLink>
@@ -23,12 +26,19 @@
 
 <style>
 
+    .footerLogo {
+        height: 3rem;
+        width: 3rem;
+    }
+
     .aboveTitle {
         font-size: 1.25rem;
     }
 
     .footer {
-        background-color: #e7deff;
+        /*background-color: #e7deff;*/
+        border-top: solid 2.5px #d7c8ff;
+        background-color: #041d30;
         height: fit-content;
         width: 100% - 1rem;
         display: flex;
@@ -47,13 +57,13 @@
     }
 
     .footerMain {
-        color: rgb(0, 0, 0);
+        color: var(--colour-title-text);
         font-size: 2rem;
         font-weight: bolder;
     }
 
     .social:hover {
-        background-color: rgba(0, 0, 0, 0.04);
+        background-color: rgba(255, 255, 255, 0.04);
     }
 
     .footerLink {
@@ -62,7 +72,7 @@
     }
 
     .squareDivider {
-        background-color: black !important;
+        background-color: #28cbd4 !important;
     }
 
 </style>

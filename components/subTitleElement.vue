@@ -1,6 +1,12 @@
 <template>
 
-    <div class="subtitle">
+    <div class="subtitle desktopMobile">
+
+        <slot />
+
+    </div>
+
+    <div class="subtitleTiny tiny">
 
         <slot />
 
@@ -13,6 +19,13 @@
 .subtitle {
     font-size: 1.5rem;
     font-weight: light;
+    color: var(--colour-title-text);
+}
+
+.subtitleTiny {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--colour-title-text);
 }
 
 </style>

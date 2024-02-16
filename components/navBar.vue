@@ -6,15 +6,19 @@
 
             <logo />
 
-            <squareDivider />
+            <squareDivider class="desktop" />
 
-            <div class="navItem"> <NuxtLink to="https://worldwidepixel.ca">Home</NuxtLink> </div>
+            <div class="navItem desktop"> <NuxtLink to="/">Home</NuxtLink> </div>
 
-            <div class="navItem"> <NuxtLink to="/">Blog</NuxtLink> </div>
+            <div class="navItem mobileTiny"> <NuxtLink to="/"><LucideHome /></NuxtLink> </div>
 
-            <div class="navItem"> <NuxtLink to="/posts">Posts</NuxtLink> </div>
+            <div class="navItem desktop"> <NuxtLink to="/blog">Blog</NuxtLink> </div>
 
-            <div class="navItem"> <NuxtLink to="/about">About</NuxtLink> </div>
+            <div class="navItem mobileTiny"> <NuxtLink to="/blog"><LucideNotebookPen /></NuxtLink> </div>
+
+            <div class="navItem desktop"> <NuxtLink to="/about">About</NuxtLink> </div>
+
+            <div class="navItem mobileTiny"> <NuxtLink to="/about"><LucideAmpersand /></NuxtLink> </div>
 
         </div>
 
@@ -37,7 +41,9 @@ nav {
 
 .navContents {
 
-    background-color: #ffffff;
+    /*background-color: var(--colour-foreground);
+    background-color: #262a30;*/
+    background-color: rgba(38, 42, 49, 0.75);
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.5);
@@ -46,6 +52,8 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+    
+
 
 }
 
@@ -64,7 +72,7 @@ logo {
 }
 
 .navItem a {
-    color: black;
+    color: var(--colour-text);
     text-decoration: none;
 }
 

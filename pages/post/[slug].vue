@@ -54,12 +54,33 @@ useSeoMeta({
 }
 
 .post {
-  background-color: white;
+  background-color: var(--colour-foreground);
   padding: 2rem;
   padding-top: 1rem;
   border-radius: 1rem;
   box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.5);
   max-width: 60rem;
+}
+
+h1 {
+  color: var(--colour-title-text);
+}
+
+h1 a {
+  color: var(--colour-title-text);
+}
+
+h2 {
+  color: var(--colour-title-text);
+}
+
+h2 a {
+  color: var(--colour-title-text);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 1rem;
 }
 
 </style>
