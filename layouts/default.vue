@@ -27,7 +27,7 @@
   color: #c7cbd4;
 }
 
-@media (max-width: 351px) {
+/*@media (max-width: 351px) {
         .desktop {
             display: none;
         }
@@ -57,7 +57,7 @@
         .mobileTiny {
             display: none;
         }
-    }
+    }*/
 
 .mainPage {
   padding: 1rem;
