@@ -49,6 +49,16 @@
   
   <script setup lang="ts">
 
+  import type { BlogPost } from "~/types";
+
+  const { data: page } = await useAsyncData("blog", () => queryContent("/post").findOne());
+  if (!page.value) {
+    throw createError({ statusCode: 404, statusMessage: "Page not found", fatal: true });
+  }
+
+  const { data: posts } = await useAsyncData("posts", () => queryContent<BlogPost>("/post").where({ _extension: "md" }).sort({ date: -1 }).find());
+
+
   useSeoMeta({
     ogTitle: "WorldWidePixel - Blog",
     ogDescription: "I make things. On the internet.",

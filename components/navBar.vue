@@ -12,9 +12,13 @@
 
             <div class="navItem mobileTiny"> <NuxtLink to="/"><LucideHome /></NuxtLink> </div>
 
-            <div class="navItem desktop"> <NuxtLink to="/blog">Blog</NuxtLink> </div>
+            <!--<div class="navItem desktop"> <NuxtLink to="/blog">Blog</NuxtLink> </div>-->
 
-            <div class="navItem mobileTiny"> <NuxtLink to="/blog"><LucideNotebookPen /></NuxtLink> </div>
+            <!--<div class="navItem mobileTiny"> <NuxtLink to="/blog"><LucideNotebookPen /></NuxtLink> </div>-->
+
+            <div class="navItem desktop"> <NuxtLink to="/projects">Projects</NuxtLink> </div>
+
+            <div class="navItem mobileTiny"> <NuxtLink to="/projects"><LucideFlaskConical /></NuxtLink> </div>
 
             <div class="navItem desktop"> <NuxtLink to="/about">About</NuxtLink> </div>
 
